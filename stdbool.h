@@ -1,10 +1,10 @@
 /* 
-filename:		stdbool.h
+filename:	stdbool.h
 specification:	The Open Group, 2008
-license:		GPLv2
+license:	GPLv2
 implementation:	yallip(R) 2012
-note:			The Open Group defines these constants of type integer.
-				They are herein defined as minimum bit representations.
+note:		The Open Group defines these constants of type integer.
+		They are herein defined as minimum bit representations.
 */
 
 #define	bool	_Bool
