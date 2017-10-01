@@ -1,0 +1,30 @@
+/* 
+filename:	      logic.def
+specification:  private, to be non-exclusively licensed to Open Group
+license:	      GPLv2
+implementation:	Copyright 2017 YALLIP, INC.
+date :          October 1, 2017
+note:		        Logic definition to match hardware implementation
+*/
+
+high  0x01h
+low   0x00h
+active [ high | low ]
+true = active
+false = !(active)
+
+accumulator_register_length   0x? /* cpu specific */
+compiler_default_word_length  0x? /* compiler specific */
+
+/* masks  */
+bit         0X01h                 /* 00000001b */
+half_byte   0x0Fh                 /* 00001111b */
+byte        0xFFh                 /* 11111111b */
+dbyte       0xFFFFh               /* 16 bIts */
+word        0xFFFFh
+qbyte       0xFFFFFFFFh           /* 32 bits */
+dword       0xFFFFFFFFh
+obyte       0xFFFFFFFFFFFFFFFFh   /* 64 bits */
+qword       0xFFFFFFFFFFFFFFFFh
+
+/* add typecasts */
